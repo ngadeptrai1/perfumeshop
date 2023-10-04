@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<style>
+    .cart {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.fa-shopping-cart {
+  margin-right: 10px;
+}
+
+.cart-items {
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  line-height: 1;
+}
+#carouselExampleInterval img{
+    object-fit: cover;
+    width: 100%;
+    height: 90vh !important;
+}
+</style>
+<body class="bg-body-secondary">
+    <!-- header -->
+   <div class=" container-fluid">
+    <div class="d-flex justify-content-around mx-4 ">
+        <a class="fw-bold text-danger h3 m-auto" href="#" ><img src="https://theme.hstatic.net/1000339918/1001070094/14/logo_medium.png?v=66" alt="" class="img-fluid"></a>
+          <div class="d-flex m-auto">
+            <div class=" me-3 me-lg-0 ">
+              <a gtm-id="Notifications" class="nav-link hidden-arrow" role="button" alt="Notifications" id="navbarNotification" data-mdb-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                
+                  <div class="cart">
+                      <i class="bi bi-cart4"></i>
+                      <span id="navbarNotificationCounter" class="badge rounded-pill badge-notification bg-d cart-items" alt="Notifications" style="color: rgb(255, 255, 255) !important;">1</span>
+                    </div>
+              </a>
+            </div>
+            <div class="mx-2"></div>
+           <div class="">
+            <form class="d-flex " role="search">
+              <input class="form-control me-2" type="search" placeholder="Tìm sản phẩm " aria-label="Search" >
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+           </div>
+          </div>
+  </div>
+    <!-- navbar -->
+      <nav class="navbar bg-body-tertiary navbar-expand-lg bg-danger-subtle">
+        <div class="container-fluid ">
+            
+          <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">logo</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class=" offcanvas-body">
+              <ul class="container navbar-nav justify-content-lg-around flex-grow-1 pe-3 ">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Khuyến mãi</a>
+                  </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Về chúng tôi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sản phẩm mới</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Cẩm nang nước hoa</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Giới tính
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Nước hoa cho nam</a></li>
+                      <li><a class="dropdown-item" href="#">Nước hoa cho nữ</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Khác</a></li>
+                    </ul>
+    
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Nhãn hiệu
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Nnhãn 1</a></li>
+                      <li><a class="dropdown-item" href="#">nhãn 2</a></li>
+                      <li><a class="dropdown-item" href="#">Khác</a></li>
+                    </ul>
+                    
+                </li>
+                
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- end header  -->
+   </div>
+   <!-- banner -->
+   <div class="container-fluid">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://static.pexels.com/photos/919/night-dark-hotel-luxury.jpg" alt="..." >
+                <div
+                    class="carousel-caption position-absolute top-50 start-50 translate-middle d-none d-md-block">
+                    <span class="border border-danger-subtle"> Welcome to </span>
+                    <h1 class="display-1">Bookit Hotel</h1>
+                    <p>Indianapolis’ mornings are beautiful…especially if you’re waking up in one of our hotel’s
+                        refined rooms! </p>
+                </div>
+            </div>
+            <div class="carousel-item position-relative">
+                <img src="https://images.pexels.com/photos/332090/pexels-photo-332090.jpeg" alt="..." >
+                <div
+                    class="carousel-caption position-absolute top-50 start-50 translate-middle d-none d-md-block">
+                    <span class="border border-danger-subtle"> Welcome to </span>
+                    <h1 class="display-1">Bookit Hotel</h1>
+                    <p>Indianapolis’ mornings are beautiful…especially if you’re waking up in one of our hotel’s
+                        refined rooms! </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg" alt="...">
+                <div
+                    class="carousel-caption position-absolute top-50 start-50 translate-middle d-none d-md-block">
+                    <span class="border border-danger-subtle"> Welcome to </span>
+                    <h1 class="display-1">Bookit Hotel</h1>
+                    <p>Indianapolis’ mornings are beautiful…especially if you’re waking up in one of our hotel’s
+                        refined rooms! </p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+   </div>
+   <!-- end banner -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script>
+    const myCarouselElement = document.querySelector('#carouselExampleInterval')
+
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+    interval: 2000,
+    touch: false
+})
+</script>
+</html>
