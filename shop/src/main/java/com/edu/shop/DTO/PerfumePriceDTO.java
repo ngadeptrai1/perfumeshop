@@ -9,11 +9,11 @@ public class PerfumePrice  {
 
     private Long id;
 
-    private BigDecimal originalPrice;
+    private Double originalPrice;
 
-    private BigDecimal purchasePrice;
+    private Double purchasePrice;
 
-    private BigDecimal salePrice;
+    private Double salePrice;
 
-    private Perfume perfume;
+    private PerfumeDTO perfumeDTO;
 }

@@ -1,0 +1,526 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" >
+
+<head>
+	<title>Fasion Template for Bootstrap</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700,900" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Bootstrap core CSS -->
+	<link href="/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+	<!-- Bootstrap core CSS -->
+	<link href="/css/styles.css" rel="stylesheet">
+	<link href="/css/animate.css" rel="stylesheet">
+	<link href="/css/owl-carousel.css" rel="stylesheet">
+	<link href="/css/lightbox.css" rel="stylesheet">
+	<link href="/css/jquery-ui.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+</head>
+
+<body id="category" class="category">
+
+
+	<header th:replace=" _fragment :: header">
+	</header>
+	<nav aria-label="breadcrumb" class="w-100 float-left">
+		<ol class="breadcrumb parallax justify-content-center" data-source-url="img/banner/parallax.jpg"
+			style="background-image: url(&quot;img/banner/parallax.jpg&quot;); background-position: 50% 0.809717%;">
+			<li class="breadcrumb-item"><a href="#">Home</a></li>
+			<li class="breadcrumb-item active" aria-current="page">category</li>
+		</ol>
+	</nav>
+	<div class="main-content w-100 float-left">
+		<div class="container">
+			<div class="row">
+				<div class="content-wrapper filter-toggle col-xl-12 col-lg-12 order-lg-2">
+					<div class="block-category mb-30 w-100 float-left">
+						<div class="category-cover">
+							<img src="img/banner/category-banner.png" alt="category-banner" />
+						</div>
+						<div class="title-category text-capitalize">women</div>
+						<div class="category-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+							sagittis, magna et euismod auctor, mauris ipsum interdum risus, a varius augue lacus id
+							diam. Mauris maximus, ipsum at gravida sodales, purus tellus tempor eros, a feugiat elit
+							odio in nunc.</div>
+					</div>
+					<header class="product-grid-header d-flex d-xs-block d-sm-flex d-lg-flex w-100 float-left">
+						<div
+							class="hidden-sm-down total-products d-flex d-xs-block d-lg-flex col-md-3 col-sm-3 col-xs-10 align-items-center float-left">
+							<div class="row">
+								<div class="nav" role="tablist">
+									<a class="grid active" href="#grid" data-toggle="tab" role="tab"
+										aria-selected="true" aria-controls="grid"><i
+											class="material-icons align-middle">grid_on</i></a>
+									<a class="list" href="#list" data-toggle="tab" role="tab" aria-selected="false"
+										aria-controls="list"><i
+											class="material-icons align-middle">format_list_bulleted</i></a>
+									<a class="sort" href="#sort-view" data-toggle="tab" role="tab" aria-selected="false"
+										aria-controls="sort-view"><i class="material-icons align-middle">reorder</i></a>
+								</div>
+							</div>
+						</div>
+						<div
+							class="filter-wrapper d-flex d-sm-flex d-xs-block d-lg-flex col-md-2 col-sm-1 col-xs-2 float-left">
+							<div class="filter-title float-xs-right">filter</div>
+						</div>
+						<!-- sort bt  -->
+						<div
+							class="shop-results-wrapper d-flex d-sm-flex d-xs-block d-lg-flex justify-content-end col-md-7 col-sm-8 col-xs-12 float-left">
+
+							<div class="shop-results d-flex align-items-center"><span>Sort By</span>
+								<div class="shop-select">
+									<select name="sort" id="sort">
+										<option value="position">Default sorting</option>
+										<option value="p-name">Sort Popularity</option>
+										<option value="p-price">Sort Price</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+					</header>
+					<!-- fillter -->
+					<div class="filter-toggle-main w-100 float-left">
+						<div class="sidebar-filter-toggle left-sidebar w-100 float-left">
+
+							<div id="sidebar-main" class="sidebar-main">
+
+								<div class="sidebar-block price col-sm-4 float-left">
+									<h3 class="widget-title"><a data-toggle="collapse" href="#price" role="button"
+											aria-expanded="true" aria-controls="price">Price</a></h3>
+									<div id="price" class="collapse show">
+										<div class="price-inner">
+											<label for="amount">Price range:</label>
+											<input type="text" id="amount" readonly
+												style="border:0; font-weight:bold; background:none;">
+											<div id="slider-range"></div>
+										</div>
+									</div>
+
+								</div>
+								<div class="sidebar-block color col-sm-4 float-left">
+									<h3 class="widget-title"><a data-toggle="collapse" href="#color" role="button"
+											aria-expanded="true" aria-controls="color">Color</a></h3>
+									<div id="color" class="sidebar-widget-option-wrapper collapse show">
+										<div class="color-inner">
+											<div class="sidebar-widget-option">
+												<a href="#" style="background-color: #000000;"></a>
+												Black <span>(4)</span>
+											</div>
+											<div class="sidebar-widget-option">
+												<a href="#" style="background-color: #11426b;"></a>
+												Blue <span>(3)</span>
+											</div>
+											<div class="sidebar-widget-option">
+												<a href="#" style="background-color: #7d5a3c;"></a>
+												Brown <span>(3)</span>
+											</div>
+											<div class="sidebar-widget-option">
+												<a href="#" style="background-color: #ffffff;"></a>
+												White <span>(3)</span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="sidebar-block size col-sm-4 float-left">
+									<h3 class="widget-title"><a data-toggle="collapse" href="#size" role="button"
+											aria-expanded="true" aria-controls="size">Size</a></h3>
+									<div id="size" class="sidebar-widget-option-wrapper collapse show">
+										<div class="size-inner">
+											<div class="sidebar-widget-option">
+												<input type="checkbox" id="size-1">
+												<label for="size-1">L <span>(4)</span></label>
+											</div>
+											<div class="sidebar-widget-option">
+												<input type="checkbox" id="size-2">
+												<label for="size-2">XS <span>(3)</span></label>
+											</div>
+											<div class="sidebar-widget-option">
+												<input type="checkbox" id="size-3">
+												<label for="size-3">S <span>(3)</span></label>
+											</div>
+											<div class="sidebar-widget-option">
+												<input type="checkbox" id="size-4">
+												<label for="size-4">Xl <span>(3)</span></label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-content text-center products w-100 float-left">
+						<div class="tab-pane grid fade active" id="grid" role="tabpanel">
+							<div class="row">
+
+								<div th:each="perfume : ${page.content} " class="product-layouts col-lg-3 col-md-3 col-sm-6 col-xs-6">
+									<div class="product-thumb">
+										<div class="image zoom">
+											<a th:href="@{/home8/{id}(id=${perfume.id})}">
+												<img src="img/products/01.jpg" alt="01" />
+												<img src="img/products/02.jpg" alt="02"
+													class="second_image img-responsive" /> </a>
+											<ul class="countdown countdown1">
+												<li><span class="days">00</span>
+													<p class="days_text">Days</p>
+												</li>
+												<li><span class="hours">00</span>
+													<p class="hours_text">Hours</p>
+												</li>
+												<li><span class="minutes">00</span>
+													<p class="minutes_text">Minutes</p>
+												</li>
+												<li><span class="seconds">00</span>
+													<p class="seconds_text">Seconds</p>
+												</li>
+											</ul>
+										</div>
+										<div class="thumb-description">
+											<div class="caption">
+												<h4 class="product-title text-capitalize"><a th:text="${perfume.perfumeDetail.name}"
+																							 th:href="@{/home8/{id}(id=${perfume.id})}" >Tên sản phẩm</a></h4>
+											</div>
+											<div class="rating">
+												<div class="product-ratings d-inline-block align-middle">
+													<span class="fa fa-stack"><i class="material-icons">star</i></span>
+													<span class="fa fa-stack"><i class="material-icons">star</i></span>
+													<span class="fa fa-stack"><i class="material-icons">star</i></span>
+													<span class="fa fa-stack"><i
+															class="material-icons off">star</i></span>
+													<span class="fa fa-stack"><i
+															class="material-icons off">star</i></span>
+												</div>
+											</div>
+
+											<div class="price">
+												<div th:text= "${ #numbers.formatDecimal(perfume.perfumePrice.salePrice, 0, 'COMMA', 0, 'POINT') +'đ'}"  class="regular-price" id = "price" >$100.0</div>
+												<div th:text="${ #numbers.formatDecimal(perfume.perfumePrice.originalPrice, 0, 'COMMA', 0, 'POINT')+'đ'}" class="old-price" >$150.00 <span>đ</span></div>
+											</div>
+
+											<div class="button-wrapper">
+												<div class="button-group text-center">
+													<button type="button" class="btn btn-primary btn-cart"
+														data-target="#cart-pop" data-toggle="modal"><i
+															class="material-icons">shopping_cart</i><span>Add to cart</span></button>
+													<a href="wishlist.html" class="btn btn-primary btn-wishlist"><i
+															class="material-icons">favorite</i><span>wishlist</span></a>
+													<button type="button" class="btn btn-primary btn-compare"><i
+															class="material-icons">equalizer</i><span>Compare</span></button>
+													<button type="button" class="btn btn-primary btn-quickview"
+															data-toggle="modal" th:attr="data-target='#product_view'+${perfume.id}"  ><i
+															class="material-icons">visibility</i><span>Quick
+														View</span></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div  class="tab-pane fade list text-left" id="list" role="tabpanel">
+							<div th:each="perfume : ${page.content}" class="product-layouts col-lg-6 col-md-6 col-sm-6 col-xs-6">
+								<div class="product-thumb row">
+									<div class="image zoom col-xs-12 col-sm-5 col-md-4">
+										<a th:href="@{/home8/{id}(id=${perfume.id})}" class="d-block position-relative">
+											<img src="img/products/01.jpg" alt="01" />
+											<img src="img/products/02.jpg" alt="02"
+												class="second_image img-responsive" />
+										</a>
+										<ul class="countdown countdown4 text-center">
+											<li><span class="days">00</span>
+												<p class="days_text">Days</p>
+											</li>
+											<li><span class="hours">00</span>
+												<p class="hours_text">Hours</p>
+											</li>
+											<li><span class="minutes">00</span>
+												<p class="minutes_text">Minutes</p>
+											</li>
+											<li><span class="seconds">00</span>
+												<p class="seconds_text">Seconds</p>
+											</li>
+										</ul>
+									</div>
+									<div class="thumb-description col-xs-12 col-sm-7 col-md-8 position-static text-left">
+										<div class="caption">
+											<h4 class="product-title text-capitalize"><a  th:href="@{/home8/{id}(id=${perfume.id})}" th:text="${perfume.perfumeDetail.name}">aliquam quaerat voluptatem</a></h4>
+										</div>
+										<div class="rating mb-10">
+											<div class="product-ratings d-inline-block align-middle">
+												<span class="fa fa-stack"><i class="material-icons">star</i></span>
+												<span class="fa fa-stack"><i class="material-icons">star</i></span>
+												<span class="fa fa-stack"><i class="material-icons">star</i></span>
+												<span class="fa fa-stack"><i class="material-icons off">star</i></span>
+												<span class="fa fa-stack"><i class="material-icons off">star</i></span>
+											</div>
+										</div>
+
+										<div class="description" th:text="${perfume.perfumeDetail.description}">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus arcu
+											turpis, quis sagittis orci dictum non. Etiam id eleifend erat. Donec sit
+											amet nisl id nisi laoreet viverra in ac nibh. </div>
+
+										<div class="price">
+											<div th:text= "${ #numbers.formatDecimal(perfume.perfumePrice.salePrice, 0, 'COMMA', 0, 'POINT') +'đ'}"  class="regular-price" id = "price" >$100.0</div>
+											<div th:text="${ #numbers.formatDecimal(perfume.perfumePrice.originalPrice, 0, 'COMMA', 0, 'POINT')+'đ'}" class="old-price" >$150.00 <span>đ</span></div>
+										</div>
+
+										<div class="button-wrapper">
+											<div class="button-group text-center">
+												<button type="button" class="btn btn-primary btn-cart"
+													data-target="#cart-pop" data-toggle="modal" disabled="disabled"><i
+														class="material-icons">shopping_cart</i><span>out of
+														stock</span></button>
+												<a href="wishlist.html" class="btn btn-primary btn-wishlist"><i
+														class="material-icons">favorite</i><span>wishlist</span></a>
+												<button type="button" class="btn btn-primary btn-compare"><i
+														class="material-icons">equalizer</i><span>Compare</span></button>
+												<button type="button" class="btn btn-primary btn-quickview"
+														data-toggle="modal" th:attr="data-target='#product_view'+${perfume.id}"  ><i
+														class="material-icons">visibility</i><span>Quick
+														View</span></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="tab-pane fade sort text-left" id="sort-view" role="tabpanel">
+							<div th:each="perfume : ${page.content}" class="product-layouts">
+								<div class="product-thumb row">
+									<div class="image zoom col-xs-12 col-sm-3 col-md-2">
+										<a th:href="@{/home8/{id}(id=${perfume.id})}" class="d-block position-relative">
+											<img src="img/products/01.jpg" alt="01" />
+											<img src="img/products/02.jpg" alt="02"
+												class="second_image img-responsive" />
+										</a>
+
+									</div>
+									<div
+										class="thumb-description col-xs-12 col-sm-9 col-md-10 position-static text-left">
+										<div class="sort-title col-md-5 col-sm-7 float-left">
+											<div class="caption">
+												<h4 class="product-title text-capitalize"><a
+														href="product-details.html"th:text="${perfume.perfumeDetail.name}">aliquam quaerat voluptatem</a></h4>
+											</div>
+
+											<div class="rating mb-10">
+												<div class="product-ratings d-inline-block align-middle">
+													<span class="fa fa-stack"><i class="material-icons">star</i></span>
+													<span class="fa fa-stack"><i class="material-icons">star</i></span>
+													<span class="fa fa-stack"><i class="material-icons">star</i></span>
+													<span class="fa fa-stack"><i
+															class="material-icons off">star</i></span>
+													<span class="fa fa-stack"><i
+															class="material-icons off">star</i></span>
+												</div>
+											</div>
+											<div class="description mb-10" th:text="${perfume.perfumeDetail.description}">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus
+												arcu turpis, quis sagittis orci dictum non. Etiam id eleifend erat.
+												Donec sit amet nisl id nisi laoreet viverra in ac nibh. </div>
+
+										</div>
+										<div class="price-main col-md-3 col-sm-5 float-left text-center text-sm-center text-xs-left">
+											<div class="price">
+												<div th:text= "${ #numbers.formatDecimal(perfume.perfumePrice.salePrice, 0, 'COMMA', 0, 'POINT') +'đ'}"  class="regular-price" id = "price" >$100.0</div>
+												<div th:text="${ #numbers.formatDecimal(perfume.perfumePrice.originalPrice, 0, 'COMMA', 0, 'POINT')+'đ'}" class="old-price" >$150.00 <span>đ</span></div>
+											</div>
+										</div>
+										<div
+											class="button-wrapper col-md-4 col-sm-5 float-left text-center text-md-center text-sm-center text-xs-left">
+											<div class="button-group text-center">
+												<button type="button" class="btn btn-primary btn-cart"
+													data-target="#cart-pop" data-toggle="modal" disabled="disabled"><i
+														class="material-icons">shopping_cart</i><span>out of
+														stock</span></button>
+												<a href="wishlist.html" class="btn btn-primary btn-wishlist"><i
+														class="material-icons">favorite</i><span>wishlist</span></a>
+												<button type="button" class="btn btn-primary btn-compare"><i
+														class="material-icons">equalizer</i><span>Compare</span></button>
+												<button type="button" class="btn btn-primary btn-quickview"
+														data-toggle="modal" th:attr="data-target='#product_view'+${perfume.id}"  ><i
+														class="material-icons">visibility</i><span>Quick
+														View</span></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- page nums -->
+					<div class="pagination-wrapper float-left w-100" >
+						<p th:text="'Bạn đang xem 1 trên '+${page.numberOfElements}+ ' sản phẩm trong tổng số ' +${page.totalElements}+ ' sản phẩm ( trang số ' + ${page.number+1}+')'  ">Showing 1 to 9 of 11 (2 Pages)</p>
+						<nav aria-label="Page navigation example" th:if="${page.totalPages > 0}">
+							<ul class="pagination">
+								<li class="page-item">
+									<a  class="page-link"  aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+										<span class="sr-only">Previous</span>
+									</a>
+								</li>
+
+								<li  th:each="pageNumber : ${pageNumbers}"  class="page-item "  th:classappend="${pageNumber== page.number + 1} ? active">
+									<a th:href="@{/home5(pageNo=${pageNumber-1})}"
+									   class="page-link"
+									   th:text=${pageNumber}>1</a>
+								</li>
+
+
+
+
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Next">
+										<span aria-hidden="true">&raquo;</span>
+										<span class="sr-only">Next</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- modal product -->
+	<div class="modal fade product_view" th:each="perfume : ${page.content} "  th:attr="id='product_view'+${perfume.id}" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					 <h4 class="modal-title w-100w-100w-100 font-weight-bold d-none">Quick view</h4>
+
+					<button type="button" class="btn btn-primary btn-quickview"
+							data-toggle="modal"   ><i
+							class="material-icons">visibility</i><span>Quick
+														View</span></button>
+
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">×</span>
+			</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6 left-columm">
+								<div class="product-large-image tab-content">
+								<div class="tab-pane active" id="product-1" role="tabpanel" aria-labelledby="product-tab-1">
+<!--									img-->
+									<div class="single-img img-full">
+										<a href="img/products/01.jpg"><img src="img/products/01.jpg" class="img-fluid" alt="" width="368" height="478"></a>
+									</div>
+								</div>
+								<div class="tab-pane" id="product-2" role="tabpanel" aria-labelledby="product-tab-2">
+									<div class="single-img">
+										<a href="img/products/02.jpg"><img src="img/products/02.jpg" class="img-fluid" alt="" width="368" height="478"></a>
+									</div>
+								</div>
+								<div class="tab-pane" id="product-3" role="tabpanel" aria-labelledby="product-tab-3">
+									<div class="single-img">
+										<a href="img/products/03.jpg"><img src="img/products/03.jpg" class="img-fluid" alt="" width="368" height="478"></a>
+									</div>
+								</div>
+								<div class="tab-pane" id="product-4" role="tabpanel" aria-labelledby="product-tab-4">
+									<div class="single-img">
+										<a href="img/products/04.jpg"><img src="img/products/04.jpg" class="img-fluid" alt="" width="368" height="478"></a>
+									</div>
+								</div>
+								<div class="tab-pane" id="product-5" role="tabpanel" aria-labelledby="product-tab-5">
+									<div class="single-img">
+										<a href="img/products/05.jpg"><img src="img/products/05.jpg" class="img-fluid" alt="" width="368" height="478"></a>
+									</div>
+								</div>
+						</div>
+						<div class="small-image-list float-left w-100"> 
+										<div class="nav-add small-image-slider-single-product-tabstyle-3 owl-carousel" role="tablist">
+											<div class="single-small-image img-full">
+												<a data-toggle="tab" id="product-tab-1" href="#product-1" class="img active"><img src="img/products/01.jpg" class="img-fluid" alt=""></a>
+											</div>
+											<div class="single-small-image img-full">
+												<a data-toggle="tab" id="product-tab-2" href="#product-2" class="img"><img src="img/products/02.jpg" class="img-fluid" alt=""></a>
+											</div>
+											<div class="single-small-image img-full">
+												<a data-toggle="tab" id="product-tab-3" href="#product-3" class="img"><img src="img/products/03.jpg" class="img-fluid" alt=""></a>
+											</div>
+											<div class="single-small-image img-full">
+												<a data-toggle="tab" id="product-tab-4" href="#product-4" class="img"><img src="img/products/04.jpg" class="img-fluid" alt=""></a>
+											</div>
+											<div class="single-small-image img-full">
+												<a data-toggle="tab" id="product-tab-5" href="#product-5" class="img"><img src="img/products/05.jpg" class="img-fluid" alt=""></a>
+											</div>
+										</div>
+									</div>
+						</div>
+						<div class="col-md-6 product_content">
+							<h4 class="product-title text-capitalize" th:text="${perfume.perfumeDetail.name}">Printed Polo Collar T-shirt</h4>
+							<div class="rating">
+							<div class="product-ratings d-inline-block align-middle">
+																						<span class="fa fa-stack"><i class="material-icons">star</i></span>
+											   <span class="fa fa-stack"><i class="material-icons">star</i></span>
+											   <span class="fa fa-stack"><i class="material-icons">star</i></span>
+											   <span class="fa fa-stack"><i class="material-icons off">star</i></span>
+											   <span class="fa fa-stack"><i class="material-icons off">star</i></span>			</div>							</div>
+							<span class="description float-left w-100" th:text="${perfume.perfumeDetail.description}">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+							<h3 class="price float-left w-100"><span class="regular-price align-middle" th:text="${ #numbers.formatDecimal(perfume.perfumePrice.originalPrice, 0, 'COMMA', 0, 'POINT')+'đ'}">$75.00</span><span class="old-price align-middle" th:text= "${ #numbers.formatDecimal(perfume.perfumePrice.salePrice, 0, 'COMMA', 0, 'POINT') +'đ'}">$60.00</span></h3>
+
+
+							<div class="btn-cart d-flex align-items-center float-left w-100">
+								<h5>qty:</h5>
+								<input  type="number" th:value="${perfume.perfumeDetail.quantity}">
+								<button type="button" class="btn btn-primary"><i class="material-icons">shopping_cart</i> Add To Cart</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		
+	<!-- Footer -->
+	<div th:replace="_fragment :: footer"></div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/owl.carousel.min.js"></script>
+	<script src="/js/custom.js"></script>
+	<script src="/js/parallax.js"></script>
+	<script src="/js/jquery-ui.min.js"></script>
+	<script src="/js/ResizeSensor.min.js"></script>
+	<script src="/js/theia-sticky-sidebar.min.js"></script>
+	<script src="/js/jquery.countdown.min.js"></script>
+	<script src="/js/masonry.pkgd.min.js"></script>
+	<script src="/js/imagesloaded.pkgd.min.js"></script>
+	<script src="/js/jquery.zoom.min.js"></script>
+	<!--Start of Tawk.to Script-->
+	<script type="text/javascript">
+		var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+		(function () {
+			var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+			s1.async = true;
+			s1.src = 'https://embed.tawk.to/5ac1aabb4b401e45400e4197/default';
+			s1.charset = 'UTF-8';
+			s1.setAttribute('crossorigin', '*');
+			s0.parentNode.insertBefore(s1, s0);
+		})();
+	</script>
+	<!--End of Tawk.to Script-->
+</body>
+
+</html>

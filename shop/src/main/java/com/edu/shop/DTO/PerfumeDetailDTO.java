@@ -13,5 +13,5 @@ public class PerfumeDetail {
 
     private int quantity;
 
-    private Perfume perfume;
+    private PerfumeDTO perfumeDTO;
 }

@@ -1,7 +1,9 @@
 package com.edu.shop.model;
 
 import java.io.Serializable;
-import jakarta.persistence.*;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import javax.persistence.*;
 import lombok.Data;
 
 import java.util.List;
@@ -25,6 +27,7 @@ public class StatusCart implements Serializable {
 
 	//bi-directional many-to-one association to Cart
 	@OneToMany(mappedBy="statusCart")
+	@JsonBackReference
 	private List<Cart> carts;
 
 

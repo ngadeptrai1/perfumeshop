@@ -8,5 +8,5 @@ public class ImagePerfume {
 
     private String name ;
 
-    private Perfume perfume;
+    private PerfumeDTO perfumeDTO;
 }

@@ -13,5 +13,5 @@ public class InvoiceDetail {
 
     private Invoice invoice;
 
-    private Perfume perfume ;
+    private PerfumeDTO perfumeDTO;
 }

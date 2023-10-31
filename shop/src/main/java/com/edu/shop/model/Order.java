@@ -1,7 +1,10 @@
 package com.edu.shop.model;
 
 import java.io.Serializable;
-import jakarta.persistence.*;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import javax.persistence.*;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -38,21 +41,14 @@ public class Invoice implements Serializable {
 
 	//bi-directional many-to-one association to InvoiceDetail
 	@OneToMany(mappedBy="invoice",fetch = FetchType.LAZY)
+	@JsonBackReference
 	private List<InvoiceDetail> invoiceDetails;
 
-	//bi-directional many-to-one association to Account
-	@ManyToOne
-	@JoinColumn(name="seller_id",referencedColumnName = "id")
-	private Account seller;
-
-	//bi-directional many-to-one association to Account
-	@ManyToOne
-	@JoinColumn(name="buyer_id",referencedColumnName = "id")
-	private Account buyer;
 
 	//bi-directional many-to-one association to Discount
 	@OneToOne
 	@JoinColumn(name = "discount_id" , referencedColumnName = "id")
+	@JsonManagedReference
 	private Discount discount;
 
 

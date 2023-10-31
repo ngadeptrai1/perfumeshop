@@ -21,5 +21,5 @@ public class Invoice {
 
     private List<InvoiceDetail> invoiceDetails;
 
-    private Account buyer;
+    private AccountDTO buyer;
 }
